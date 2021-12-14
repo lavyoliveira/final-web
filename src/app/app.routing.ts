@@ -1,4 +1,4 @@
-import {Routes} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 
 import {PesquisaComponent} from './pesquisa/pesquisa.component';
 import {LoginComponent} from './login/login.component';
@@ -11,4 +11,4 @@ const APP_ROUTES: Routes = [
   { path: 'cadastro', component: CadastroComponent}
 ];
 
-const routing: ModuleWithProviders = RouterModule.forRoot;
+export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);

@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { HeaderComponent } from './header/header.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
+import {routing} from './app.routing';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
@@ -20,14 +21,15 @@ import {AuthService} from './login/auth.service';
     LoginComponent,
     CadastroComponent,
     HeaderComponent,
-    PesquisaComponent
+    PesquisaComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     MatInputModule,
     MatSliderModule,
-    AppRoutingModule
+    AppRoutingModule,
+    routing
   ],
   providers: [
     AuthService

@@ -10,6 +10,7 @@ body {
   font-family: sans-serif;
   color: rgb(250, 250, 250);
   font-size: small;
+  top: 0;
 }
 
 .container {
