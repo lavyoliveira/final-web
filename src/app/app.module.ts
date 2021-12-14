@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
 
+import {MatInputModule} from '@angular/material/input';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,7 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component';
   imports: [
     BrowserModule,
     FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
