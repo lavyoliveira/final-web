@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { VinhoComponent } from './vinho/vinho.component';
 
+import { MeusVinhosComponent } from './meus-vinhos/meusvinhos.component';
 import { routing } from './app.routing';
 import { Usuario } from './login/usuario';
 import {HttpClient, HttpClientModule} from '@angular/common/http'
@@ -26,7 +27,8 @@ import {VinhoService} from './services/vinho.service'
     CadastroComponent,
     HeaderComponent,
     PesquisaComponent,
-    VinhoComponent
+    VinhoComponent,
+    MeusVinhosComponent
   ],
   imports: [
     BrowserModule,
