@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  cadastro = [];
-
-  onCadastrado(cadastro){
-    this.cadastro.push(cadastro);
-  }
+  title = 'angular';
 }
