@@ -15,7 +15,7 @@ body {
   width: 300px;
   padding: 40px;
   position: absolute;
-  top: 55%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fc3a51;
@@ -90,3 +90,4 @@ h2 {
   transition: 0.25s;
   cursor: pointer;
 }
+

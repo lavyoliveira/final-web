@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { HeaderComponent } from './header/header.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
+import { MeusVinhosComponent } from './meus-vinhos/meusvinhos.component';
 import { routing } from './app.routing';
 import { Usuario } from './login/usuario';
 
@@ -23,6 +24,7 @@ import {AuthService} from './login/auth.service';
     CadastroComponent,
     HeaderComponent,
     PesquisaComponent,
+    MeusVinhosComponent
   ],
   imports: [
     BrowserModule,
