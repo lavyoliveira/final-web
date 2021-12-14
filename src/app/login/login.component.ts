@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {AuthService} from './auth.service';
+
 
 @Component({
   selector: 'app-login',
@@ -6,10 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 
-export class LoginComponent {
-  enteredValue ='';
-  login = 'no content';
+export class LoginComponent implements OnInit{
+
+  constructor (private authService: AuthService)
+  {
+
+  }
+
+  ngOnInit()
+  {
+
+  }
   onEntrar(){
-    this.login = this.enteredValue;
+
   }
 }
