@@ -2,9 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="pesquisa.component.css" type="text/css">
+    <link href="grid/simple-grid.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
+      <div class="row">
+        <div class="col-6">
     <h2>Tipos de vinho</h2>
     <button type="button">Tinto</button>
     <button type="button">Branco</button>
@@ -14,8 +17,10 @@
     <button type="button">Sobremesa</button>
     <button type="button">Fortificado</button>
 
+    <div class="slider">
     <h2>Faixa de preços</h2>
-    <mat-slider min="0" max="1500" step="0.5" value="1.5"></mat-slider>
+    R$0<mat-slider thumbLabel min="0" max="1300" step="0.5" value="1.5"></mat-slider>R$1.300
+    </div>
 
     <h2>Classificação em estrelas</h2>
       <input type="radio" id="html" name="fav_language" value="HTML">
@@ -60,9 +65,21 @@
     <button type="button">Austria</button>
 
     <h2>Estilos de vinho</h2>
+    <button type="button">Cabernet Sauvignon Californiano</button>
+    <button type="button">Malbec argentino</button>
+    <button type="button">Rioja espanhol tinto</button>
+    <button type="button">Tinto da Itália central</button>
+    <button type="button">Tinto espanhol</button>
 
     <h2>Harmonização com comidas</h2>
-
-  </div>
+    <div class="search">
+      <input type="text" placeholder="pesquise...">
+      <img class="pesquisa" src="https://uploaddeimagens.com.br/images/003/587/426/full/search.png?1639523455">
+      </div>
+      <div class="col-6">
+        Olá
+      </div>
+    </div>
+    </div>
   </body>
 </html>

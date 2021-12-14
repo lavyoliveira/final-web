@@ -6,10 +6,6 @@ body {
   font-size: small;
 }
 
-.container {
-  background-color: #fc3a51;
-  width: 28%;
-}
 
 button {
   border: 0;
@@ -26,7 +22,6 @@ button {
   margin-left: 3%;;
   margin-top: 5%;
   display: inline;
-
 }
 
 button:hover{
@@ -41,4 +36,45 @@ h2 {
   padding-left: 5%;
   padding-top: 20%;
   font-size: x-large;
+}
+
+.search .pesquisa {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  border-right: 1px solid white;
+  padding-right: 10px;
+
+}
+
+.search {
+  position: relative;
+  width: 200px;
+  height: 25px;
+  top: 15%;
+  left: 5%;
+}
+
+.search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0 10px 0 45px;
+}
+
+ .search input::placeholder {
+  color: white;
+}
+
+mat-slider{
+  left: 10px;
 }
