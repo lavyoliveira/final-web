@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from './auth.service';
+import {Usuario} from './usuario';
 
 
 @Component({
@@ -10,6 +11,8 @@ import {AuthService} from './auth.service';
 
 export class LoginComponent implements OnInit{
 
+  usuario: Usuario = new Usuario();
+
   constructor (private authService: AuthService)
   {
 
@@ -19,7 +22,9 @@ export class LoginComponent implements OnInit{
   {
 
   }
-  onEntrar(){
 
+  onEntrar(){
+    // console.log(this.usuario);
+    this.authService.onEntrar(this.usuario);
   }
 }

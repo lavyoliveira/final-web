@@ -9,9 +9,9 @@
         <div class="container">
             <img src="https://uploaddeimagens.com.br/images/003/586/064/full/wine_glass_icon_125583.png">
             <h1>LOGIN</h1>
-           <input type="text" name="e" placeholder="email">
-           <input type="password" name="s" placeholder="senha">
-           <input (click)="onEntrar()" type="submit" name="" placeholder="entrar">
+           <input [(ngModel)]="usuario.email" type="text" id="email" class="validate" placeholder="email">
+           <input [(ngModel)]="usuario.senha" type="password" id="senha" class="validate" placeholder="senha">
+           <input (click)="onEntrar()" type="submit" name="action" placeholder="entrar">
            <h2>ainda não tem um cadastro? <br>Cadastre-se</h2>
         </div>
     </body>
