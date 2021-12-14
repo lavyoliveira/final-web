@@ -7,18 +7,19 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CadastroComponent,
-    HeaderComponent
+    HeaderComponent,
+    PesquisaComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

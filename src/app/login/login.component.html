@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br" ng-app="alurapic">
     <head>
         <title>Welcome</title>
-
-        <a href="https://icons8.com/icon/69446/game-maker"></a>
         <link rel="stylesheet" href="login.component.css" type="text/css">
       </head>
 
     <body>
         <div class="container">
-            <img src="wine_glass_icon_125583.png"/>
+            <img src="https://uploaddeimagens.com.br/images/003/586/064/full/wine_glass_icon_125583.png">
             <h1>LOGIN</h1>
-           <input type="text" name="e" placeholder="email" [(ngModel)]="enteredValue">
-           <input type="password" name="s" placeholder="senha" [(ngModel)]="enteredValue">
+           <input type="text" name="e" placeholder="email">
+           <input type="password" name="s" placeholder="senha">
            <input (click)="onEntrar()" type="submit" name="" placeholder="entrar">
-           <h2>ainda não tem um cadastro? <br><button type="button">Cadastre-se</button></h2>
+           <h2>ainda não tem um cadastro? <br>Cadastre-se</h2>
         </div>
     </body>
 </html>
