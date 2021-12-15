@@ -24,14 +24,16 @@ button {
   cursor: pointer;
   color: white;
   display: inline;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 button:hover{
-  background-color:#fc3a51;
+  background-color:#0e2430;
 }
 
 button:active{
-  background-color: #fc3a51;
+  background-color: #0e2430;
 }
 
 .search .pesquisa {
@@ -71,7 +73,7 @@ button:active{
 }
 
 mat-slider{
-  left: 10px;
+  left: 20px;
 }
 
 .titulo {
@@ -85,5 +87,27 @@ mat-slider{
 }
 
 .coluna-1{
-  background-color:#fc3a51 ;
+  margin-top: 2%;
+  background-color:#fc3a51;
+  height: 100%;
+}
+
+.coluna-2{
+  margin-top: 2%;
+}
+
+h3{
+  text-align: center;
+  font-size: x-large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.radio2 {
+  margin-left: 5%;
+  font-size:medium;
 }

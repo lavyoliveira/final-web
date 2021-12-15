@@ -4,22 +4,24 @@
 <head>
     <title>Vinho</title>
     <link rel="stylesheet" href="vinho.component.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="img">
+  <div class="fundo-header">
+  <div class="titulo">{{vinho[0].productName}}</div>
+</div>
+<div class="tela-inteira">
+  <div class="coluna1">
         <img [attr.src]=" vinho[0].image">
-        <div class="titulo">{{vinho[0].productName}}</div>
-        <div class="card">
+  </div>
+
+  <div class="coluna2">
         País de origem: {{vinho[0].originCountry}}
         <br>Tipo do vinho: {{vinho[0].wineType}}
         <br>Tipo da uva: {{vinho[0].grapeType}}
         <br>Harmonizações: <p ng-repeat="(harmonizing, value) in vinho">{{vinho[0].harmonizing}}</p>
-      </div>
-    </div>
-
+  </div>
+</div>
         <div class="resenhas"><h2>RESENHAS:</h2></div>
 
         <div class="listaReview">
@@ -40,7 +42,6 @@
             </tbody>
 
         </div>
-    </div>
 </body>
 
 </html>
