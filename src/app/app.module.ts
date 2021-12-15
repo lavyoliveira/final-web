@@ -23,6 +23,7 @@ import {VinhoService} from './services/vinho.service'
 import {LoginService} from './services/login.service'
 import {CadastroVinhoService} from './services/cadastro-vinho.service'
 import { MeusVinhosService } from './services/meus-vinhos.service';
+import { PesquisaService } from './services/pesquisa.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { MeusVinhosService } from './services/meus-vinhos.service';
     VinhoService,
     LoginService,
     CadastroVinhoService,
-    MeusVinhosService
+    MeusVinhosService,
+    PesquisaService
   ],
   bootstrap: [AppComponent]
 })

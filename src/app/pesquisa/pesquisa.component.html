@@ -2,80 +2,160 @@
   <link rel="stylesheet" href="pesquisa.component.css">
 </head>
 <app-header></app-header>
+
 <body>
   <div class="tela-toda">
     <div class="coluna-1">
       <h2>Tipos de vinho</h2>
-      <button type="button">Tinto</button>
-      <button type="button">Branco</button>
-      <button type="button">Vinho espumante</button>
-      <br>
-      <button type="button">Rosé</button>
-      <button type="button">Sobremesa</button>
-      <button type="button">Fortificado</button>
+      <button class=btn value="Tinto" id="tipoVinho" #ref1 (click)="vinho.tipo = ref1.value "
+        (click)="getWineByType(ref1.value)" type="button">Tinto</button>
+      <button class=btn value="Branco" id="tipoVinho" #ref2 (click)="vinho.tipo = ref2.value"
+        (click)="getWineByType(ref2.value)" type="button">Branco</button>
+      <button class=btn value="Espumante" id="tipoVinho" #ref3 (click)="vinho.tipo = ref3.value"
+        (click)="getWineByType(ref3.value)" type="button">Vinho espumante</button>
+      <button class=btn value="Rose" id="tipoVinho" #ref4 (click)="vinho.tipo = ref4.value" type="button"
+        (click)="getWineByType(ref4.value)">Rosé</button>
+      <button class=btn value="Sobremesa" id="tipoVinho" #ref5 (click)="vinho.tipo = ref5.value" type="button"
+        (click)="getWineByType(ref5.value)">Sobremesa</button>
+      <button class=btn value="Fortificado" id="tipoVinho" #ref6 (click)="vinho.tipo = ref6.value"
+        (click)="getWineByType(ref6.value)" type="button">Fortificado</button>
+
 
       <h2>Faixa de preços</h2>
       <mat-slider min="0" max="1300" step="5" value="5" thumbLabel></mat-slider>
 
       <h2>Classificação em estrelas</h2>
       <div class="radio2">
-      <input type="radio" id="4estrelas2" name="radio" value="HTML">
-      <label for="4estrelas"> 4.2+ Muito Raro</label><br>
-      <input type="radio" id="3estrelas8" name="radio" value="4estrelas">
-      <label for="3estrelase8"> 3.8+ Bom</label><br>
-      <input type="radio" id="3estrelase6" name="radio" value="3estrelase8">
-      <label for="3estrelase6"> 3.6+ Comum</label><br>
-      <input type="radio" id="qualquer" name="radio" value="qualquer">
-      <label for="qualquer">Qualquer classificação</label>
-    </div>
-      <h2>Uvas</h2>
-      <button type="button">Cabernet Franc</button>
-      <button type="button">Cabernet Sauvignon</button>
-      <button type="button">Chardonnay</button>
-      <button type="button">Grenache</button>
-      <button type="button">Malbec</button>
-      <button type="button">Merlot</button>
-      <button type="button">Pinot Noir</button>
-      <button type="button">Riesling</button>
-      <button type="button">Sauvignon Blanc</button>
-      <button type="button">Shiraz</button>
+        <input (click)="getWineByStars(ref8.value)" #ref8 type="radio" id="4estrelas2" name="radio" value=1>
+        <label for="4estrelas"> 1 Estrela</label><br>
+        <input (click)="getWineByStars(ref9.value)" type="radio" #ref9 id="3estrelas8" name="radio" value=2>
+        <label for="3estrelase8"> 2 Estrelas</label><br>
+        <input (click)="getWineByStars(ref10.value)" type="radio" #ref10 id="3estrelase6" name="radio" value=3>
+        <label for="3estrelase6"> 3 Estrelas</label><br>
+        <input (click)="getWineByStars(ref11.value)" type="radio" #ref11 id="3estrelase6" name="radio" value=4>
+        <label for="3estrelase6"> 4 Estrelas</label><br>
+        <input (click)="getWineByStars(ref12.value)" type="radio" #ref12 id="3estrelase6" name="radio" value=5>
+        <label for="3estrelase6"> 5 Estrelas</label><br>
+        <input (click)="getWineByStars(ref13.value)" type="radio" #ref13 id="qualquer" name="radio" value='todas'>
+        <label for="qualquer">Qualquer classificação</label>
+      </div>
 
-      <h2>Regiões</h2>
-      <button type="button">Bordeaux</button>
-      <button type="button">Bourgogne</button>
-      <button type="button">Piemonte</button>
-      <button type="button">Toscana</button>
-      <button type="button">Vale do Napa</button>
-      <button type="button">Vale do Rhône</button>
+      <h2>Uvas</h2>
+      <button type="button" value="Cabernet Franc" id="tipoUva" #ref14 (click)="vinho.uva = ref14.value"
+        (click)="getWineByGrapeType(ref14.value)">Cabernet Franc</button>
+      <button type="button" value="Cabernet Sauvignon" id="tipoUva" #ref15 (click)="vinho.uva = ref15.value"
+        (click)="getWineByGrapeType(ref15.value)">Cabernet Sauvignon</button>
+      <button type="button" value="Chardonnay" id="tipoUva" #ref16 (click)="vinho.uva = ref16.value"
+        (click)="getWineByGrapeType(ref16.value)">Chardonnay</button>
+      <button type="button" value="Grenache" id="tipoUva" #ref17 (click)="vinho.uva = ref17.value"
+        (click)="getWineByGrapeType(ref17.value)">Grenache</button>
+      <button type="button" value="Malbec" id="tipoUva" #ref18 (click)="vinho.uva = ref18.value"
+        (click)="getWineByGrapeType(ref18.value)">Malbec</button>
+      <button type="button" value="Merlot" id="tipoUva" #ref19 (click)="vinho.uva = ref19.value"
+        (click)="getWineByGrapeType(ref19.value)">Merlot</button>
+      <button type="button" value="Pinot Noir" id="tipoUva" #ref20 (click)="vinho.uva = ref20.value"
+        (click)="getWineByGrapeType(ref20.value)">Pinot Noir</button>
+      <button type="button" value="Riesling" id="tipoUva" #ref21 (click)="vinho.uva = ref21.value"
+        (click)="getWineByGrapeType(ref21.value)">Riesling</button>
+      <button type="button" value="SauvignonBlanc" id="tipoUva" #ref22 (click)="vinho.uva = ref22.value"
+        (click)="getWineByGrapeType(ref22.value)">Sauvignon Blanc</button>
+      <button type="button" value="Shiraz" id="tipoUva" #ref23 (click)="vinho.uva = ref23.value"
+        (click)="getWineByGrapeType(ref23.value)">Shiraz</button>
+
 
       <h2>Países</h2>
-      <button type="button">Alemanha</button>
-      <button type="button">Argentina</button>
-      <button type="button">Austrália</button>
-      <button type="button">Chile</button>
-      <button type="button">Espanha</button>
-      <button type="button">Estados Unidos</button>
-      <button type="button">França</button>
-      <button type="button">Itália</button>
-      <button type="button">Portugal</button>
-      <button type="button">Austria</button>
-
-      <h2>Estilos de vinho</h2>
-      <button type="button">Cabernet Sauvignon Californiano</button>
-      <button type="button">Malbec argentino</button>
-      <button type="button">Rioja espanhol tinto</button>
-      <button type="button">Tinto da Itália central</button>
-      <button type="button">Tinto espanhol</button>
+      <button type="button" value="Alemanha" id="pais" #ref24 (click)="vinho.pais = ref24.value"
+      (click)="getWineByOrigin(ref24.value)">Alemanha</button>
+      <button type="button" value="Argentina" id="pais" #ref25 (click)="vinho.pais = ref25.value"
+      (click)="getWineByOrigin(ref25.value)">Argentina</button>
+      <button type="button" value="Austrália" id="pais" #ref26 (click)="vinho.pais = ref26.value"
+      (click)="getWineByOrigin(ref26.value)">Austrália</button>
+      <button type="button" value="Chile" id="pais" #ref27 (click)="vinho.pais = ref27.value"
+      (click)="getWineByOrigin(ref27.value)">Chile</button>
+      <button type="button" value="Espanha" id="pais" #ref28 (click)="vinho.pais = ref28.value"
+      (click)="getWineByOrigin(ref28.value)">Espanha</button>
+      <button type="button" value="Estados Unidos" id="tipopais" #ref29 (click)="vinho.pais = ref29.value"
+      (click)="getWineByOrigin(ref29.value)">Estados Unidos</button>
+      <button type="button" value="Franca" id="pais" #ref30 (click)="vinho.pais = ref30.value"
+      (click)="getWineByOrigin(ref30.value)">França</button>
+      <button type="button" value="Italia" id="pais" #ref31 (click)="vinho.pais = ref31.value"
+      (click)="getWineByOrigin(ref31.value)">Itália</button>
+      <button type="button" value="Portugal" id="pais" #ref32 (click)="vinho.pais = ref32.value"
+      (click)="getWineByOrigin(ref32.value)">Portugal</button>
+      <button type="button" value="Austria" id="pais" #ref33 (click)="vinho.pais = ref33.value"
+      (click)="getWineByOrigin(ref33.value)">Austria</button>
 
       <h2>Harmonização com comidas</h2>
       <div class="search">
-        <input type="text" placeholder="pesquise...">
-        <img class="pesquisa" src="https://uploaddeimagens.com.br/images/003/587/426/full/search.png?1639523455">
+        <div>
+          <input [(ngModel)]="vinho.harmonizacoes" type="text" placeholder="pesquise...">
+          <img class="pesquisa" src="https://uploaddeimagens.com.br/images/003/587/426/full/search.png?1639523455">
+        </div>
+        
+        <div><button type="button" (click)="getWineByHarmonizing(vinho.harmonizacoes)">Buscar</button></div>
+        
       </div>
     </div>
 
     <div class="coluna-2">
       <h3>RESULTADO DA PESQUISA</h3>
+
+      <ng-container *ngIf="searchType == 'wine'">
+        <h2>Vinho {{vinho.tipo}}</h2>
+      </ng-container>
+
+      <ng-container *ngIf="searchType == 'stars'">
+        <h2>Vinhos de {{vinho.estrelas}} estrelas</h2>
+      </ng-container>
+
+      <ng-container *ngIf="searchType == 'grape'">
+        <h2>Vinhos com uvas do tipo {{vinho.uva}}</h2>
+      </ng-container>
+
+      <ng-container *ngIf="searchType == 'origin'">
+        <h2>Vinhos de {{vinho.pais}}</h2>
+      </ng-container>
+
+
+
+      <tr *ngFor="let vin of arrayVinhos;">
+
+        <div class="vinho">
+
+          <div class="imagemVinho"><img attr.src="{{vin.image}}"></div>
+
+          <div>
+            <div class="nomeVinho">
+              <p>Vinho: {{vin.productName}}</p>
+            </div>
+            <div class="vinicula">
+              <p>Vinicula: {{vin.vinicula}}</p>
+            </div>
+            <div class="tipoVinho">
+              <p>Tipo do vinho: {{vin.wineType}}</p>
+            </div>
+            <div class="tipoUva">
+              <p>Tipo de uva: {{vin.grapeType}}</p>
+            </div>
+            <div class="preco">
+              <p>Preço: {{vin.price}}</p>
+            </div>
+            <div class="estrelas">
+              <p>Estrelas {{vin.rating}}</p>
+            </div>
+            <div class="harmonizacao">
+              <p>Harmonizações: {{vin.harmonizing}}</p>
+            </div>
+          </div>
+          <div class="botoesVinho">
+            <a href="/vinho/{{vin.productName}}"><button type="button">Veja mais sobre o vinho</button></a>
+            <button type="button">Adicione uma resenha</button>
+          </div>
+        </div>
+
+      </tr>
+
     </div>
+
   </div>
 </body>

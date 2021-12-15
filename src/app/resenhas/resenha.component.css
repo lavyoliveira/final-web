@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+
+body {
+  background-color:#0e2430;
+  height: 100vh;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  color: #0e2430;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: xx-large;
+  padding-left: 40%;
+}
+
+.container{
+  padding-left: 30px;
+}
+
+.header-cadastrar
+{
+  background-color: #fc3a51;
+  margin-left: -28px;
+  padding-bottom: 20px;
+}
+
+button {
+  border: 0;
+  background: none;
+  display: block;
+  text-align: center;
+  border: 2px solid #f9a799;
+  padding: 5px 20px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  color: white;
+  display: inline;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+
+button:hover{
+  background-color:#fc3a51;
+}
+
+button:active{
+  background-color: #fc3a51;
+}
+button:focus{
+  background-color: #fc3a51;
+}
+
+.search .pesquisa {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  border-right: 1px solid white;
+  padding-right: 10px;
+
+}
+
+.search {
+  position: relative;
+  width: 200px;
+  height: 25px;
+  left: 2%;
+}
+
+.search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0 10px 0 45px;
+}
+
+ .search input::placeholder {
+  color: white;
+}
+
+mat-slider{
+  left: 10px;
+}
+
+.titulo {
+  font-size: 500;
+  font-weight: bold;
+}
+
+h2 {
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+input [type=text]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #f9a799;
+  background: transparent;
+  outline: none;
+  border: 1px solid #f9a799;
+  border-radius: 4px;
+  padding: 0 10px 0 45px;
+}
+
+#file{
+  width: 50%;
+}
+
+.enviar {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #f9a799;
+  padding: 14px 40px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  color: white;
+  margin-top: 30px;
+}
+
+.tela-inteira{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fc3a51;
+  height: 20vh;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
+.card{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  margin-left: 30%;
+}
+
+.vinho {
+  background: none;
+  width: 40%;
+  color: #f9a799;
+  background: transparent;
+  outline: none;
+  border: 1px solid #f9a799;
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.vinho3{
+  background: none;
+  width: 40%;
+  color: #f9a799;
+  background: transparent;
+  outline: none;
+  border: 1px solid #f9a799;
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  margin-left: 15px;
+}
+
+.coluna1{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+
+.coluna2{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.coluna3
+{
+  margin-left: 50px;
+  margin-top: 50px;
+}
