@@ -1,14 +1,21 @@
-.tela-toda{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
 
 body {
-  background-color: #0e2430;
-  font-family: sans-serif;
-  color: rgb(250, 250, 250);
-  font-size: small;
-  height: 160vh;
+  background-color:#0e2430;
+  height: 130vh;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  color: white;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 30px;
+}
+
+.container{
+  padding-left: 30px;
 }
 
 button {
@@ -24,14 +31,15 @@ button {
   cursor: pointer;
   color: white;
   display: inline;
+  margin-left: 20px;
 }
 
 button:hover{
-  background-color:#0e2430;
+  background-color:#fc3a51;
 }
 
 button:active{
-  background-color: #0e2430;
+  background-color: #fc3a51;
 }
 
 .search .pesquisa {
@@ -49,7 +57,7 @@ button:active{
   position: relative;
   width: 200px;
   height: 25px;
-  left: 5%;
+  left: 2%;
 }
 
 .search input {
@@ -77,4 +85,23 @@ mat-slider{
 .titulo {
   font-size: 500;
   font-weight: bold;
+}
+
+h2 {
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+input [type=text]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0 10px 0 45px;
 }
