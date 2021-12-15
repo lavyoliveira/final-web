@@ -1,19 +1,21 @@
-<body>
+<body><div class="container">
+  <div class="header-cadastrar">
   <h1>CADASTRAR VINHO</h1>
-  <br><br>Imagem do vinho: <input [(ngModel)]="vinho.file" type="text" id="file" name="file"
+</div>
+<div class="card">
+  <br><br>Imagem do vinho: <input [(ngModel)]="vinho.file" type="text" id="file" name="file" class="vinho"
     placeholder="Cole o link da imagem do vinho">
-  <br><br>Nome da vinícula: <input [(ngModel)]="vinho.vinicula" type="text" id="vinicula" name="vinicula"
-    placeholder="vinícula">
-  <br><br>Nome do vinho: <input [(ngModel)]="vinho.nome" type="text" id="nome" name="nome" placeholder="vinho">
-  
-
+  <br><br>Nome da vinícula: <input [(ngModel)]="vinho.vinicula" type="text" id="vinicula" name="vinicula" class="vinho"
+    placeholder="Vinícula">
+  <br><br>Nome do vinho: <input [(ngModel)]="vinho.nome" type="text" id="nome" name="nome" placeholder="Vinho" class="vinho3">
+</div>
+</div>
   <h2>Tipos de vinho</h2>
   <button class=btn active value="Tinto" id="tipoVinho" #ref1 (click)="vinho.tipo = ref1.value"
     type="button">Tinto</button>
   <button class=btn value="Branco" id="tipoVinho" #ref2 (click)="vinho.tipo = ref2.value" type="button">Branco</button>
   <button class=btn value="Vinho Espumante" id="tipoVinho" #ref3 (click)="vinho.tipo = ref3.value" type="button">Vinho
     espumante</button>
-  <br>
   <button class=btn value="Rose" id="tipoVinho" #ref4 (click)="vinho.tipo = ref4.value" type="button">Rosé</button>
   <button class=btn value="Sobremesa" id="tipoVinho" #ref5 (click)="vinho.tipo = ref5.value"
     type="button">Sobremesa</button>
@@ -34,20 +36,25 @@
     Blanc</button>
   <button value="Shiraz" id="tipoUva" #ref10 (click)="vinho.uva = ref10.value" type="button">Shiraz</button>
 
+  <div class="tela-inteira">
+    <div class="coluna1">
   <h2>País</h2>
   <div class="search">
     <input type="text" [(ngModel)]="vinho.pais" placeholder="Insira um país">
   </div>
-
+</div>
+  <div class="coluna2">
   <h2>Harmonizações</h2>
   <div class="search">
     <input type="text" [(ngModel)]="vinho.harmonizacoes" placeholder="Insira uma harmonização">
   </div>
-
+</div>
+<div class="coluna3">
   <h2>Preço</h2>
   <div class="search">
     <input type="text" [(ngModel)]="vinho.preco" placeholder="Insira somente números">
   </div>
-
-  <input (click)="onCadastrar()" type="submit" name="action" placeholder="Cadastrar">
+</div>
+</div>
+  <input (click)="onCadastrar()" type="submit" name="action" placeholder="Cadastrar" class="enviar">
 </body>

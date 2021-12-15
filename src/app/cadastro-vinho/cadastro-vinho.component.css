@@ -2,20 +2,28 @@
 
 body {
   background-color:#0e2430;
-  height: 130vh;
+  height: 100vh;
   color: white;
   font-family: 'Roboto', sans-serif;
 }
 
 h1{
-  color: white;
+  color: #0e2430;
   padding-top: 50px;
   font-family: 'Montserrat', sans-serif;
-  padding-left: 30px;
+  font-size: xx-large;
+  padding-left: 40%;
 }
 
 .container{
   padding-left: 30px;
+}
+
+.header-cadastrar
+{
+  background-color: #fc3a51;
+  margin-left: -28px;
+  padding-bottom: 20px;
 }
 
 button {
@@ -32,6 +40,7 @@ button {
   color: white;
   display: inline;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -102,14 +111,89 @@ input [type=text]{
   left: 0;
   width: 100%;
   height: 100%;
-  color: white;
+  color: #f9a799;
   background: transparent;
   outline: none;
-  border: 1px solid white;
+  border: 1px solid #f9a799;
   border-radius: 4px;
   padding: 0 10px 0 45px;
 }
 
 #file{
   width: 50%;
+}
+
+.enviar {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #f9a799;
+  padding: 14px 40px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  color: white;
+  margin-top: 30px;
+}
+
+.tela-inteira{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fc3a51;
+  height: 20vh;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
+.card{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  margin-left: 30%;
+}
+
+.vinho {
+  background: none;
+  width: 40%;
+  color: #f9a799;
+  background: transparent;
+  outline: none;
+  border: 1px solid #f9a799;
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.vinho3{
+  background: none;
+  width: 40%;
+  color: #f9a799;
+  background: transparent;
+  outline: none;
+  border: 1px solid #f9a799;
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  margin-left: 15px;
+}
+
+.coluna1{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+
+.coluna2{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.coluna3
+{
+  margin-left: 50px;
+  margin-top: 50px;
 }
