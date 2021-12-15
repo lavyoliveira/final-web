@@ -10,6 +10,6 @@ export class LoginService {
 
   public getUser(email: any, senha:any){
     console.log(senha)
-    return this.http.post(`http://localhost:3000/user/getUser/${email}`, {'password':senha})
+    return this.http.post(`https://projetofinalbaldochi.herokuapp.com/user/getUser/${email}`, {'password':senha})
   }
 }
