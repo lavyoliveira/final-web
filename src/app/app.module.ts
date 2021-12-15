@@ -14,7 +14,6 @@ import { MeusVinhosComponent } from './meus-vinhos/meusvinhos.component';
 import { routing } from './app.routing';
 import { Usuario } from './login/usuario';
 import {HttpClient, HttpClientModule} from '@angular/common/http'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatSliderModule} from '@angular/material/slider';
 import {AppRoutingModule } from './app-routing.module';
@@ -34,7 +33,7 @@ import { PesquisaService } from './services/pesquisa.service';
     PesquisaComponent,
     VinhoComponent,
     MeusVinhosComponent,
-    CadastroVinhoComponent
+    CadastroVinhoComponent,
   ],
   imports: [
     BrowserModule,

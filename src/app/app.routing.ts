@@ -9,13 +9,14 @@ import { CadastroVinhoComponent} from './cadastro-vinho/cadastro-vinho.component
 import { ModuleWithProviders } from '@angular/compiler/src/core';
 import { MeusVinhosComponent } from './meus-vinhos/meusvinhos.component';
 
+
 const APP_ROUTES: Routes = [
   { path: '', component: PesquisaComponent},
   { path: 'login', component: LoginComponent},
   { path: 'cadastro', component: CadastroComponent},
   { path: 'vinho/:name', component: VinhoComponent},
   { path: 'meusvinhos', component: MeusVinhosComponent},
-  { path: 'cadastrovinho', component: CadastroVinhoComponent}
+  { path: 'cadastrovinho', component: CadastroVinhoComponent},
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
