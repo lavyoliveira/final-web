@@ -21,6 +21,8 @@ import {AppRoutingModule } from './app-routing.module';
 import {AuthService} from './login/auth.service';
 import {VinhoService} from './services/vinho.service'
 import {LoginService} from './services/login.service'
+import {CadastroVinhoService} from './services/cadastro-vinho.service'
+import { MeusVinhosService } from './services/meus-vinhos.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import {LoginService} from './services/login.service'
     HttpClientModule,
     AuthService,
     VinhoService,
-    LoginService
+    LoginService,
+    CadastroVinhoService,
+    MeusVinhosService
   ],
   bootstrap: [AppComponent]
 })

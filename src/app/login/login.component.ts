@@ -19,15 +19,19 @@ export class LoginComponent {
   constructor(private loginService: LoginService,
     private router: Router) { }
 
+
   onEntrar() {
     const login = this.usuario.email
-    this.loginService.getUser(login).subscribe((data) => {
+    const senha = this.usuario.senha
+    this.loginService.getUser(login, senha).subscribe((data) => {
       this.loginStatus = data
+      console.log(data)
       if (this.loginStatus.status === 201) {
         alert(this.loginStatus.message)
       }
       else {
         localStorage.setItem('auth', 'S');
+        localStorage.setItem('email', login);
         this.router.navigateByUrl('')
       }
 

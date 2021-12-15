@@ -1,88 +1,80 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="pesquisa.component.css" type="text/css">
-  </head>
-  <body>
-    <div class ="main">
-    <div class="container">
-    <h2>Tipos de vinho</h2>
-    <button type="button">Tinto</button>
-    <button type="button">Branco</button>
-    <button type="button">Vinho espumante</button>
-    <br>
-    <button type="button">Rosé</button>
-    <button type="button">Sobremesa</button>
-    <button type="button">Fortificado</button>
+<head>
+  <link rel="stylesheet" href="pesquisa.component.css">
+</head>
+<app-header></app-header>
+<body>
+  <div class="tela-toda">
+    <div class="coluna-1">
+      <h2>Tipos de vinho</h2>
+      <button type="button">Tinto</button>
+      <button type="button">Branco</button>
+      <button type="button">Vinho espumante</button>
+      <br>
+      <button type="button">Rosé</button>
+      <button type="button">Sobremesa</button>
+      <button type="button">Fortificado</button>
 
-          <h2>Faixa de preços</h2>
-  <mat-slider min="0" max="1500" step="0.5" value="1.5"></mat-slider>
+      <h2>Faixa de preços</h2>
+      <mat-slider min="0" max="1500" step="0.5" value="1.5"></mat-slider>
 
-  <h2>Classificação em estrelas</h2>
-    <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="4estrelas"> 4.2+ Muito Raro</label><br>
-    <input type="radio" id="4estrelas" name="fav_language" value="4estrelas">
-    <label for="3estrelase8"> 3.8+ Bom</label><br>
-    <input type="radio" id="3estrelase8" name="fav_language" value="3estrelase8">
-    <label for="3estrelase6"> 3.6+ Comum</label><br>
-    <input type="radio" id="qualquer" name="fav_language" value="qualquer">
-    <label for="qualquer">Qualquer classificação</label>
+      <h2>Classificação em estrelas</h2>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="4estrelas"> 4.2+ Muito Raro</label><br>
+      <input type="radio" id="4estrelas" name="fav_language" value="4estrelas">
+      <label for="3estrelase8"> 3.8+ Bom</label><br>
+      <input type="radio" id="3estrelase8" name="fav_language" value="3estrelase8">
+      <label for="3estrelase6"> 3.6+ Comum</label><br>
+      <input type="radio" id="qualquer" name="fav_language" value="qualquer">
+        <label for="qualquer">Qualquer classificação</label>
 
-  <h2>Uvas</h2>
-  <button type="button">Cabernet Franc</button>
-  <button type="button">Cabernet Sauvignon</button>
-  <button type="button">Chardonnay</button>
-  <button type="button">Grenache</button>
-  <button type="button">Malbec</button>
-  <button type="button">Merlot</button>
-  <button type="button">Pinot Noir</button>
-  <button type="button">Riesling</button>
-  <button type="button">Sauvignon Blanc</button>
-  <button type="button">Shiraz</button>
+      <h2>Uvas</h2>
+      <button type="button">Cabernet Franc</button>
+      <button type="button">Cabernet Sauvignon</button>
+      <button type="button">Chardonnay</button>
+      <button type="button">Grenache</button>
+      <button type="button">Malbec</button>
+      <button type="button">Merlot</button>
+      <button type="button">Pinot Noir</button>
+      <button type="button">Riesling</button>
+      <button type="button">Sauvignon Blanc</button>
+      <button type="button">Shiraz</button>
 
-  <h2>Regiões</h2>
-  <button type="button">Bordeaux</button>
-  <button type="button">Bourgogne</button>
-  <button type="button">Piemonte</button>
-  <button type="button">Toscana</button>
-  <button type="button">Vale do Napa</button>
-  <button type="button">Vale do Rhône</button>
+      <h2>Regiões</h2>
+      <button type="button">Bordeaux</button>
+      <button type="button">Bourgogne</button>
+      <button type="button">Piemonte</button>
+      <button type="button">Toscana</button>
+      <button type="button">Vale do Napa</button>
+      <button type="button">Vale do Rhône</button>
 
-  <h2>Países</h2>
-  <button type="button">Alemanha</button>
-  <button type="button">Argentina</button>
-  <button type="button">Austrália</button>
-  <button type="button">Chile</button>
-  <button type="button">Espanha</button>
-  <button type="button">Estados Unidos</button>
-  <button type="button">França</button>
-  <button type="button">Itália</button>
-  <button type="button">Portugal</button>
-  <button type="button">Austria</button>
+      <h2>Países</h2>
+      <button type="button">Alemanha</button>
+      <button type="button">Argentina</button>
+      <button type="button">Austrália</button>
+      <button type="button">Chile</button>
+      <button type="button">Espanha</button>
+      <button type="button">Estados Unidos</button>
+      <button type="button">França</button>
+      <button type="button">Itália</button>
+      <button type="button">Portugal</button>
+      <button type="button">Austria</button>
 
-  <h2>Estilos de vinho</h2>
-  <button type="button">Cabernet Sauvignon Californiano</button>
-  <button type="button">Malbec argentino</button>
-  <button type="button">Rioja espanhol tinto</button>
-  <button type="button">Tinto da Itália central</button>
-  <button type="button">Tinto espanhol</button>
+      <h2>Estilos de vinho</h2>
+      <button type="button">Cabernet Sauvignon Californiano</button>
+      <button type="button">Malbec argentino</button>
+      <button type="button">Rioja espanhol tinto</button>
+      <button type="button">Tinto da Itália central</button>
+      <button type="button">Tinto espanhol</button>
 
-  <h2>Harmonização com comidas</h2>
-  <div class="search">
-    <input type="text" placeholder="pesquise...">
-    <img class="pesquisa" src="https://uploaddeimagens.com.br/images/003/587/426/full/search.png?1639523455">
+      <h2>Harmonização com comidas</h2>
+      <div class="search">
+        <input type="text" placeholder="pesquise...">
+        <img class="pesquisa" src="https://uploaddeimagens.com.br/images/003/587/426/full/search.png?1639523455">
+      </div>
     </div>
-      </div>
 
-      <div class="coluna-2">
-cvbvcb
-      </div>
+    <div class="coluna-2">
+      cvbvcb
+    </div>
   </div>
-
-  <div>
-    <h1>AQUIIIII</h1>
-  </div>
-
-</div>
-  </body>
-</html>
+</body>

@@ -8,8 +8,8 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  public getUser(email: any){
-    console.log(email)
-    return this.http.get(`http://localhost:3000/user/getUser/${email}`)
+  public getUser(email: any, senha:any){
+    console.log(senha)
+    return this.http.post(`http://localhost:3000/user/getUser/${email}`, {'password':senha})
   }
 }

@@ -83,3 +83,7 @@ mat-slider{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.coluna-1{
+  background-color:#fc3a51 ;
+}

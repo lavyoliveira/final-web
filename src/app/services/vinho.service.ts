@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class VinhoService {
 
   constructor(private http: HttpClient) { }
-  wine = 'Pergola'
+  
   public getWineInfo(wine: any){
     return this.http.get(`https://projetofinalbaldochi.herokuapp.com/wine/getWineByName/${wine}`)
   }

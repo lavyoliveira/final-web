@@ -1,1 +1,48 @@
-<h1>BALDO É LINDO</h1>
+<app-header></app-header>
+<html lang="pt-br" ng-app="alurapic">
+
+<head>
+    <link rel="stylesheet" href="meusvinhos.component.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Meus vinhos</h1>
+        <div class="listaVinhos">
+            <tbody *ngFor="let vin of vinhos; let i = index">
+                <div class="vinho">
+                    <div>
+                        <div class="imagemVinho"><img attr.src="{{vin.image}}"></div>
+                    </div>
+                    <div>
+                        <div class="nomeVinho">
+                            <a href='/vinho/{{vin.productName}}'>Vinho: {{vin.productName}}</a>
+                        </div>
+                        <div class="vinicula">
+                            <p>Vinicula: {{vin.vinicula}}</p>
+                        </div>
+                        <div class="tipoVinho">
+                            <p>Tipo do vinho: {{vin.wineType}}</p>
+                        </div>
+                        <div class="tipoUva">
+                            <p>Tipo de uva: {{vin.grapeType}}</p>
+                        </div>
+                        <div class="preco">
+                            <p>Preço: {{vin.price}}</p>
+                        </div>
+                        <div class="estrelas">
+                            <p>Estrelas {{vin.rating}}</p>
+                        </div>
+                        <div class="harmonizacao">
+                            <p>Harmonizações: {{vin.harmonizing}}</p>
+                        </div>
+                    </div>
+                </div>
+            </tbody>
+
+        </div>
+    </div>
+</body>
+
+</html>
