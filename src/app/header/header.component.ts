@@ -7,5 +7,14 @@ import { Component } from "@angular/core";
 })
 
 export class HeaderComponent{
-
+    auth: any
+    ok:  any
+      
+    ngOnInit() {
+      
+      this.auth = localStorage.getItem('auth')
+      return this.auth
+      
+    }
+  
 }

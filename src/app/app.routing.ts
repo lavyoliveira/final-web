@@ -13,7 +13,7 @@ const APP_ROUTES: Routes = [
   { path: '', component: PesquisaComponent},
   { path: 'login', component: LoginComponent},
   { path: 'cadastro', component: CadastroComponent},
-  { path: 'vinho', component: VinhoComponent},
+  { path: 'vinho/:name', component: VinhoComponent},
   { path: 'meusvinhos', component: MeusVinhosComponent},
   { path: 'cadastrovinho', component: CadastroVinhoComponent}
 ];

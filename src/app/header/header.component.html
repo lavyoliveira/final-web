@@ -1,8 +1,22 @@
 <body>
   <nav class="navMenu">
-    <a routerLink="/login">Perfil</a>
+    <ng-container *ngIf="auth == 'S'">
+      <a routerLink="/cadastrovinho">Cadastrar Vinho</a>
+      <a routerLink="/meusvinhos">Meus Vinhos</a>
+ </ng-container>
+    
     <a routerLink="/vinho">Vinhos</a>
     <a href="">Pesquisa</a>
+
+    <ng-container *ngIf="auth == 'S'">
+      <a routerLink="/login">Sair</a>
+ </ng-container>
+ <ng-container *ngIf="auth == null">
+  <a routerLink="/login">Login</a>
+</ng-container>
+    
+    
+    
     <div class="dot"></div>
   </nav>
 </body>

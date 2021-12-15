@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 import { VinhoService } from "../services/vinho.service";
 
 @Component({
@@ -9,11 +10,12 @@ import { VinhoService } from "../services/vinho.service";
 })
 export class VinhoComponent{
   vinho: any
-  constructor(private vinhoService: VinhoService) { }
-
+  wine: any
+  constructor(private vinhoService: VinhoService,
+    private activatedRoute: ActivatedRoute) { }
   ngOnInit() {
-    const wine = "Pergola"
-    this.vinhoService.getWineInfo(wine).subscribe((data) => {
+    this.wine = this.activatedRoute.snapshot.params["name"]
+    this.vinhoService.getWineInfo(this.wine).subscribe((data) => {
       this.vinho = data
     }, err => {
       console.log(err)

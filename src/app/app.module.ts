@@ -20,6 +20,9 @@ import {MatSliderModule} from '@angular/material/slider';
 import {AppRoutingModule } from './app-routing.module';
 import {AuthService} from './login/auth.service';
 import {VinhoService} from './services/vinho.service'
+import {LoginService} from './services/login.service'
+import {CadastroVinhoService} from './services/cadastro-vinho.service'
+import { MeusVinhosService } from './services/meus-vinhos.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import {VinhoService} from './services/vinho.service'
   providers: [
     HttpClientModule,
     AuthService,
-    VinhoService
+    VinhoService,
+    LoginService,
+    CadastroVinhoService,
+    MeusVinhosService
   ],
   bootstrap: [AppComponent]
 })

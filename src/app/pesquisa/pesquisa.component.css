@@ -78,3 +78,12 @@ mat-slider{
   font-size: 500;
   font-weight: bold;
 }
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.coluna-1{
+  background-color:#fc3a51 ;
+}

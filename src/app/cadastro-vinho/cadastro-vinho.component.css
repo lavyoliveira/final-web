@@ -34,11 +34,15 @@ button {
   margin-left: 20px;
 }
 
+
 button:hover{
   background-color:#fc3a51;
 }
 
 button:active{
+  background-color: #fc3a51;
+}
+button:focus{
   background-color: #fc3a51;
 }
 
@@ -104,4 +108,8 @@ input [type=text]{
   border: 1px solid white;
   border-radius: 4px;
   padding: 0 10px 0 45px;
+}
+
+#file{
+  width: 50%;
 }

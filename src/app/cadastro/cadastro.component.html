@@ -9,8 +9,9 @@
         <div class="container">
             <img src="https://uploaddeimagens.com.br/images/003/586/064/full/wine_glass_icon_125583.png"/>
             <h1>CADASTRE-SE</h1>
-           <input maxInput type="text" name="e" placeholder="email">
-           <input maxInput type="password" name="s" placeholder="senha">
+            <input maxInput [(ngModel)]="usuario.nome" type="text" name="e" placeholder="Nome">
+           <input maxInput [(ngModel)]="usuario.email" type="text" name="e" placeholder="Email">
+           <input maxInput [(ngModel)]="usuario.senha" type="password" name="s" placeholder="Senha">
            <input (click)="onCadastrar()" type="submit" name="" placeholder="entrar">
         </div>
     </body>

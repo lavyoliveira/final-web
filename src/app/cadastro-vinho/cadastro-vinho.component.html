@@ -1,47 +1,53 @@
 <body>
-<h1>CADASTRAR VINHO</h1>
-<div class="container">
-  Envie a imagem do seu rótulo: <input type="file" />
-  <br><br>Nome da vinícula: <input type="text" id="vinicula" name="vinícula" placeholder="vinícula">
-  <br><br>Nome do vinho:  <input type="text" id="vinho" name="vinho" placeholder="vinho">
-</div>
+  <h1>CADASTRAR VINHO</h1>
+  <br><br>Imagem do vinho: <input [(ngModel)]="vinho.file" type="text" id="file" name="file"
+    placeholder="Cole o link da imagem do vinho">
+  <br><br>Nome da vinícula: <input [(ngModel)]="vinho.vinicula" type="text" id="vinicula" name="vinicula"
+    placeholder="vinícula">
+  <br><br>Nome do vinho: <input [(ngModel)]="vinho.nome" type="text" id="nome" name="nome" placeholder="vinho">
+  
 
-    <h2>Tipos de vinho</h2>
-    <button type="button">Tinto</button>
-    <button type="button">Branco</button>
-    <button type="button">Vinho espumante</button>
-    <br>
-    <button type="button">Rosé</button>
-    <button type="button">Sobremesa</button>
-    <button type="button">Fortificado</button>
+  <h2>Tipos de vinho</h2>
+  <button class=btn active value="Tinto" id="tipoVinho" #ref1 (click)="vinho.tipo = ref1.value"
+    type="button">Tinto</button>
+  <button class=btn value="Branco" id="tipoVinho" #ref2 (click)="vinho.tipo = ref2.value" type="button">Branco</button>
+  <button class=btn value="Vinho Espumante" id="tipoVinho" #ref3 (click)="vinho.tipo = ref3.value" type="button">Vinho
+    espumante</button>
+  <br>
+  <button class=btn value="Rose" id="tipoVinho" #ref4 (click)="vinho.tipo = ref4.value" type="button">Rosé</button>
+  <button class=btn value="Sobremesa" id="tipoVinho" #ref5 (click)="vinho.tipo = ref5.value"
+    type="button">Sobremesa</button>
+  <button class=btn value="Fortificado" id="tipoVinho" #ref6 (click)="vinho.tipo = ref6.value"
+    type="button">Fortificado</button>
 
-    <h2>Uvas</h2>
-    <button type="button">Cabernet Franc</button>
-    <button type="button">Cabernet Sauvignon</button>
-    <button type="button">Chardonnay</button>
-    <button type="button">Grenache</button>
-    <button type="button">Malbec</button>
-    <button type="button">Merlot</button>
-    <button type="button">Pinot Noir</button>
-    <button type="button">Riesling</button>
-    <button type="button">Sauvignon Blanc</button>
-    <button type="button">Shiraz</button>
+  <h2>Uvas</h2>
+  <button value="Cabernet" id="tipoUva" #ref1 (click)="vinho.uva = ref1.value" type="button">Cabernet Franc</button>
+  <button value="Sauvignon" id="tipoUva" #ref2 (click)="vinho.uva = ref2.value" type="button">Cabernet
+    Sauvignon</button>
+  <button value="Chardonnay" id="tipoUva" #ref3 (click)="vinho.uva = ref3.value" type="button">Chardonnay</button>
+  <button value="Grenache" id="tipoUva" #ref4 (click)="vinho.uva = ref4.value" type="button">Grenache</button>
+  <button value="Malbec" id="tipoUva" #ref5 (click)="vinho.uva = ref5.value" type="button">Malbec</button>
+  <button value="Merlot" id="tipoUva" #ref6 (click)="vinho.uva = ref6.value" type="button">Merlot</button>
+  <button value="Pinot Noir" id="tipoUva" #ref7 (click)="vinho.uva = ref7.value" type="button">Pinot Noir</button>
+  <button value="Riesling" id="tipoUva" #ref8 (click)="vinho.uva = ref8.value" type="button">Riesling</button>
+  <button value="Sauvignon Blanc" id="tipoUva" #ref9 (click)="vinho.uva = ref9.value" type="button">Sauvignon
+    Blanc</button>
+  <button value="Shiraz" id="tipoUva" #ref10 (click)="vinho.uva = ref10.value" type="button">Shiraz</button>
 
-    <h2>Países</h2>
-    <button type="button">Alemanha</button>
-    <button type="button">Argentina</button>
-    <button type="button">Austrália</button>
-    <button type="button">Chile</button>
-    <button type="button">Espanha</button>
-    <button type="button">Estados Unidos</button>
-    <button type="button">França</button>
-    <button type="button">Itália</button>
-    <button type="button">Portugal</button>
-    <button type="button">Austria</button>
+  <h2>País</h2>
+  <div class="search">
+    <input type="text" [(ngModel)]="vinho.pais" placeholder="Insira um país">
+  </div>
 
-    <h2>Harmonizações</h2>
-    <div class="search">
-      <input type="text" placeholder="pesquise...">
-      <img class="pesquisa" src="https://uploaddeimagens.com.br/images/003/587/426/full/search.png?1639523455">
-      </div>
-    </body>
+  <h2>Harmonizações</h2>
+  <div class="search">
+    <input type="text" [(ngModel)]="vinho.harmonizacoes" placeholder="Insira uma harmonização">
+  </div>
+
+  <h2>Preço</h2>
+  <div class="search">
+    <input type="text" [(ngModel)]="vinho.preco" placeholder="Insira somente números">
+  </div>
+
+  <input (click)="onCadastrar()" type="submit" name="action" placeholder="Cadastrar">
+</body>

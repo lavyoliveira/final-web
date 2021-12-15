@@ -1,5 +1,7 @@
-import { Component, EventEmitter, Output} from '@angular/core';
-
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
+import { CadastroService } from '../services/cadastro.service';
+import { Usuario } from './usuario';
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
@@ -7,17 +9,24 @@ import { Component, EventEmitter, Output} from '@angular/core';
 })
 
 export class CadastroComponent {
-  enteredEmail = '';
-  enteredPassword = '';
-  @Output() usuarioCadastrado = new EventEmitter();
+  usuario: Usuario = new Usuario();
 
-  onCadastrar(){
-    const cadastro = {
-      email: this.enteredEmail,
-      senha: this.enteredPassword
-    };
+  constructor(private cadastroService: CadastroService,
+    private router: Router) { }
 
-    this.usuarioCadastrado.emit(cadastro);
+  onCadastrar() {
+    const nome = this.usuario.nome
+    const email = this.usuario.email
+    const senha = this.usuario.senha
+
+
+    this.cadastroService.registerUser(nome, email, senha).subscribe((data) => {
+
+      alert('Usuario cadastrado com sucesso')
+      this.router.navigateByUrl('/login')
+    }, err => {
+      alert(err.error.message)
+    })
+
   }
-
 }
