@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
 
 .container {
     background-color: #0e2430;
@@ -13,13 +14,15 @@
     grid-template-columns: 0.5fr 1.5fr;
     margin: 1%;
   }
+
 h1{
   text-align: center;
   justify-self: center;
   color: white;
   font-size: 40px;
   font-family: sans-serif;
-padding-top: 2%;
+  padding-top: 2%;
+  font-family: Montserrat;
 }
   img{
     width: 70%;
