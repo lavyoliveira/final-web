@@ -7,15 +7,18 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { HeaderComponent } from './header/header.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
+import { VinhoComponent } from './vinho/vinho.component';
+
 import { MeusVinhosComponent } from './meus-vinhos/meusvinhos.component';
 import { routing } from './app.routing';
 import { Usuario } from './login/usuario';
-
+import {HttpClient, HttpClientModule} from '@angular/common/http'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatSliderModule} from '@angular/material/slider';
 import {AppRoutingModule } from './app-routing.module';
 import {AuthService} from './login/auth.service';
+import {VinhoService} from './services/vinho.service'
 
 @NgModule({
   declarations: [
@@ -24,6 +27,7 @@ import {AuthService} from './login/auth.service';
     CadastroComponent,
     HeaderComponent,
     PesquisaComponent,
+    VinhoComponent,
     MeusVinhosComponent
   ],
   imports: [
@@ -32,10 +36,13 @@ import {AuthService} from './login/auth.service';
     MatInputModule,
     MatSliderModule,
     AppRoutingModule,
+    HttpClientModule,
     routing
   ],
   providers: [
-    AuthService
+    HttpClientModule,
+    AuthService,
+    VinhoService
   ],
   bootstrap: [AppComponent]
 })
