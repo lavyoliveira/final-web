@@ -12,12 +12,9 @@ const APP_ROUTES: Routes = [
   { path: '', component: PesquisaComponent},
   { path: 'login', component: LoginComponent},
   { path: 'cadastro', component: CadastroComponent},
-<<<<<<< HEAD
   { path: 'vinho', component: VinhoComponent},
 
-=======
   { path: 'meusvinhos', component: MeusVinhosComponent}
->>>>>>> 12fd4eac6ce08823afda9a889357b4ee83d28450
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);

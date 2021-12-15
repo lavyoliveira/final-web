@@ -42,3 +42,8 @@ h2 {
   padding-top: 20%;
   font-size: x-large;
 }
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
