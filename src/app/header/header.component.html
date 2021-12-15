@@ -1,22 +1,24 @@
+<head>
+</head>
 <body>
   <nav class="navMenu">
     <ng-container *ngIf="auth == 'S'">
       <a routerLink="/cadastrovinho">Cadastrar Vinho</a>
       <a routerLink="/meusvinhos">Meus Vinhos</a>
  </ng-container>
-    
-    <a routerLink="/vinho">Vinhos</a>
+
     <a href="">Pesquisa</a>
 
+    <div class="logo">
     <ng-container *ngIf="auth == 'S'">
       <a routerLink="/login">Sair</a>
  </ng-container>
  <ng-container *ngIf="auth == null">
-  <a routerLink="/login">Login</a>
+  <a routerLink="/login"><img src="https://uploaddeimagens.com.br/images/003/588/952/full/user.png"></a>
 </ng-container>
-    
-    
-    
+</div>
+
+
     <div class="dot"></div>
   </nav>
 </body>

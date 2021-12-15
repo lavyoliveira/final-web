@@ -17,8 +17,7 @@ body {
 .navMenu {
   position: absolute;
   top: 5%;
-  left: 42%;
-  height: 50%;
+  left: 45%;
 }
 
 .navMenu a {
@@ -38,6 +37,11 @@ body {
 }
 
 img {
-  width: 50%;
+  width: 60%;
   align-items: right;
+}
+
+.logo {
+  padding-left: 700px;
+  margin-top: -30px;
 }
