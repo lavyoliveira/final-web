@@ -35,10 +35,7 @@ import { ResenhaService } from './services/resenha.service';
     VinhoComponent,
     MeusVinhosComponent,
     CadastroVinhoComponent,
-<<<<<<< HEAD
     ResenhaComponent
-=======
->>>>>>> 71e0c6bbbc439a85c4b6df6aaf6aafff2347321f
   ],
   imports: [
     BrowserModule,
