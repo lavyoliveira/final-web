@@ -17,10 +17,7 @@ const APP_ROUTES: Routes = [
   { path: 'vinho/:name', component: VinhoComponent},
   { path: 'meusvinhos', component: MeusVinhosComponent},
   { path: 'cadastrovinho', component: CadastroVinhoComponent},
-<<<<<<< HEAD
   { path: 'resenha/:name', component:ResenhaComponent}
-=======
->>>>>>> 71e0c6bbbc439a85c4b6df6aaf6aafff2347321f
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
