@@ -9,7 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { VinhoComponent } from './vinho/vinho.component';
 import { CadastroVinhoComponent } from './cadastro-vinho/cadastro-vinho.component';
-
+import { ResenhaComponent } from './resenhas/resenha.component';
 import { MeusVinhosComponent } from './meus-vinhos/meusvinhos.component';
 import { routing } from './app.routing';
 import { Usuario } from './login/usuario';
@@ -24,6 +24,7 @@ import {LoginService} from './services/login.service'
 import {CadastroVinhoService} from './services/cadastro-vinho.service'
 import { MeusVinhosService } from './services/meus-vinhos.service';
 import { PesquisaService } from './services/pesquisa.service';
+import { ResenhaService } from './services/resenha.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PesquisaService } from './services/pesquisa.service';
     PesquisaComponent,
     VinhoComponent,
     MeusVinhosComponent,
-    CadastroVinhoComponent
+    CadastroVinhoComponent,
+    ResenhaComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ import { PesquisaService } from './services/pesquisa.service';
     LoginService,
     CadastroVinhoService,
     MeusVinhosService,
-    PesquisaService
+    PesquisaService,
+    ResenhaService
   ],
   bootstrap: [AppComponent]
 })

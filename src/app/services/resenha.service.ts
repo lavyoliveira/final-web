@@ -8,12 +8,13 @@ export class ResenhaService {
   
   constructor(private http: HttpClient) { }
 
-  public registerReview(nome:string, email:any, senha:any) {
+  public registerReview(productName:any, nome:string, email:any, resenha:any, estrelas:any) {
  
-    return this.http.post(`https://projetofinalbaldochi.herokuapp.com/user/register`, {
+    return this.http.post(`https://projetofinalbaldochi.herokuapp.com/wine/addReview/${productName}`, {
       "name": nome,
       "email": email,
-      "password": senha,
+      "review": resenha,
+      "stars": estrelas,
     })
   }
 }
