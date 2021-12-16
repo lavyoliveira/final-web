@@ -1,0 +1,32 @@
+<app-header></app-header>
+ <html lang="pt-br" ng-app="alurapic">
+
+<head>
+    <link rel="stylesheet" href="pessoal.component.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Resenhas de {{name}}</h1>
+        
+        <div class="containerReview">
+            <tbody *ngFor="let vin of arrayReview; let i = index">
+                <div class="review" >
+                        <div id="productName">
+                            <a href='/vinho/{{vin.productName}}'>Vinho: {{vin.productName}}</a>
+                        </div>
+                        <div >
+                            <p>Estrelas {{vin.stars}}</p>
+                        </div>
+                        <div>
+                            <p>Resenha: {{vin.review}}</p>
+                        </div>
+                </div>
+            </tbody>
+
+        </div>
+    </div>
+</body>
+
+</html> 

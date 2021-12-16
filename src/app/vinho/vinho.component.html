@@ -31,8 +31,7 @@
 
                         <div class="review">
                           <div class="estrelas"><p>Estrelas: {{review.stars}}</p></div>
-                        <p>Nome: {{review.name}}</p>
-                        <p>Email: {{review.email}}</p>
+                        <a href="/perfil/{{review.name}}" (click)="saveEmail(review.email)">Nome: {{review.name}}</a>
                         <p>Vinho: {{review.productName}}</p>
                         <p>Resenha: {{review.review}}</p>
 

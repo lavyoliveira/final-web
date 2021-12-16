@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+
+.container {
+    background-color: #0e2430;
+    font-family: sans-serif;
+    color: black;
+    height: 100% !important;
+  }
+
+
+h1{
+  text-align: center;
+  justify-self: center;
+  color: white;
+  font-size: 40px;
+  font-family: sans-serif;
+  padding-top: 2%;
+  font-family: Montserrat;
+}
+
+.listaReview{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+#productName{
+  padding-bottom: 2%;
+}
+.containerReview{
+  text-align: center;
+}
+  .review {
+    background-color: #fc3a51;
+  width: 50em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom:2%;
+  font-size: large;
+  border-radius: 15px;
+  }
+  

@@ -21,5 +21,8 @@ export class VinhoComponent{
       console.log(err)
     })
   }
+  saveEmail(email:any){
+    localStorage.setItem('search', email)
+  }
 
 }

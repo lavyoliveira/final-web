@@ -30,6 +30,7 @@ body {
   width: 80px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  margin-right: 5%;
 }
 
 .navMenu a:hover {

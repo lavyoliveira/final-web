@@ -24,7 +24,8 @@ import {CadastroVinhoService} from './services/cadastro-vinho.service'
 import { MeusVinhosService } from './services/meus-vinhos.service';
 import { PesquisaService } from './services/pesquisa.service';
 import { ResenhaService } from './services/resenha.service';
-
+import { PessoalComponent } from './pessoal/pessoal.component';
+import { PessoalService } from './services/pessoal.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,10 +36,8 @@ import { ResenhaService } from './services/resenha.service';
     VinhoComponent,
     MeusVinhosComponent,
     CadastroVinhoComponent,
-<<<<<<< HEAD
-    ResenhaComponent
-=======
->>>>>>> 71e0c6bbbc439a85c4b6df6aaf6aafff2347321f
+    ResenhaComponent,
+    PessoalComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +56,8 @@ import { ResenhaService } from './services/resenha.service';
     CadastroVinhoService,
     MeusVinhosService,
     PesquisaService,
-    ResenhaService
+    ResenhaService,
+    PessoalService
   ],
   bootstrap: [AppComponent]
 })
