@@ -17,7 +17,7 @@ export class CadastroVinhoComponent {
 
   onCadastrar() {
 
-    
+
     this.cadastroVinhoService.registerWine(this.vinho).subscribe((data) => {
       alert('Vinho cadastrado com sucesso')
       this.router.navigateByUrl('')

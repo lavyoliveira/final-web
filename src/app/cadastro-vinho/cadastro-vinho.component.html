@@ -38,9 +38,26 @@
   <div class="tela-inteira">
     <div class="coluna1">
   <h2>País</h2>
-  <div class="search">
-    <input type="text" [(ngModel)]="vinho.pais" placeholder="Insira um país">
-  </div>
+  <button type="button" value="Alemanha" id="pais" #ref24 (click)="vinho.pais = ref24.value"
+      (click)="getWineByOrigin(ref24.value)">Alemanha</button>
+      <button type="button" value="Argentina" id="pais" #ref25 (click)="vinho.pais = ref25.value"
+      (click)="getWineByOrigin(ref25.value)">Argentina</button>
+      <button type="button" value="Austrália" id="pais" #ref26 (click)="vinho.pais = ref26.value"
+      (click)="getWineByOrigin(ref26.value)">Austrália</button>
+      <button type="button" value="Chile" id="pais" #ref27 (click)="vinho.pais = ref27.value"
+      (click)="getWineByOrigin(ref27.value)">Chile</button>
+      <button type="button" value="Espanha" id="pais" #ref28 (click)="vinho.pais = ref28.value"
+      (click)="getWineByOrigin(ref28.value)">Espanha</button>
+      <button type="button" value="Estados Unidos" id="tipopais" #ref29 (click)="vinho.pais = ref29.value"
+      (click)="getWineByOrigin(ref29.value)">Estados Unidos</button>
+      <button type="button" value="Franca" id="pais" #ref30 (click)="vinho.pais = ref30.value"
+      (click)="getWineByOrigin(ref30.value)">França</button>
+      <button type="button" value="Italia" id="pais" #ref31 (click)="vinho.pais = ref31.value"
+      (click)="getWineByOrigin(ref31.value)">Itália</button>
+      <button type="button" value="Portugal" id="pais" #ref32 (click)="vinho.pais = ref32.value"
+      (click)="getWineByOrigin(ref32.value)">Portugal</button>
+      <button type="button" value="Austria" id="pais" #ref33 (click)="vinho.pais = ref33.value"
+      (click)="getWineByOrigin(ref33.value)">Austria</button>
 </div>
   <div class="coluna2">
   <h2>Harmonizações</h2>
