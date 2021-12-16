@@ -14,7 +14,6 @@ import { MeusVinhosComponent } from './meus-vinhos/meusvinhos.component';
 import { routing } from './app.routing';
 import { Usuario } from './login/usuario';
 import {HttpClient, HttpClientModule} from '@angular/common/http'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatSliderModule} from '@angular/material/slider';
 import {AppRoutingModule } from './app-routing.module';
@@ -36,7 +35,10 @@ import { ResenhaService } from './services/resenha.service';
     VinhoComponent,
     MeusVinhosComponent,
     CadastroVinhoComponent,
+<<<<<<< HEAD
     ResenhaComponent
+=======
+>>>>>>> 71e0c6bbbc439a85c4b6df6aaf6aafff2347321f
   ],
   imports: [
     BrowserModule,
